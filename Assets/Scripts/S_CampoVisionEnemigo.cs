@@ -5,37 +5,28 @@ using UnityEngine;
 
 public class S_CampoVisionEnemigo : MonoBehaviour
 {
-    [SerializeField]
-    LayerMask layer_selected;
+    [SerializeField] LayerMask layer_selected;
 
-    [SerializeField]
-    bool entra_campo_enemigo;
+    [SerializeField] bool entra_campo_enemigo; // consulta
 
-    [SerializeField]
-    bool entra_angulo_vision_enemigo;
-    [SerializeField]
-    float anguloEntreVectores;
+    [SerializeField] bool entra_angulo_vision_enemigo; //consulta
+    [SerializeField] float anguloEntreVectores; //consulta
 
-    [SerializeField]
-    bool hay_obstaculos;
+    [SerializeField] bool hay_obstaculos; //consulta
 
     //////////////////
 
-    [SerializeField]
-    Transform transform_jugador;
+    [SerializeField] Transform transform_jugador; //personaje a seguir
 
-    [SerializeField]
-    Vector3 puntoFrontal;
-    Vector3 puntoIzquierdaVision;
-    Vector3 puntoDerechaVision;
+    [SerializeField] Vector3 puntoFrontal; // 
+    Vector3 puntoIzquierdaVision; //lineas azules que limitan el campo de vision
+    Vector3 puntoDerechaVision; //lineas azules que limitan el campo de vision
 
     //////////////////
 
-    [SerializeField]
-    float radioVision = 5f;
+    [SerializeField] float radioVision = 5f; //area de percepcion
 
-    [SerializeField]
-    float anguloVision;
+    [SerializeField] float anguloVision;  //define el espectro de vision
 
     //////////////////
 
