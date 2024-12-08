@@ -24,6 +24,7 @@ public class ManagerLife : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+            Debug.Log("Click"); 
             damage = Random.Range(0f, 1f);
             vida -= damage;
             valorVida.fillAmount = vida;

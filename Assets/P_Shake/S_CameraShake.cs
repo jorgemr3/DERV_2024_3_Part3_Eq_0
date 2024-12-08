@@ -24,6 +24,7 @@ public class S_CameraShake : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F)) {
             StartCoroutine("shake");
+            Debug.Log("Shake");
         }
     }
 
